@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: CONFIG-CLIENT-APP
+  cloud:    config:      label: development      uri: <repository-URL>  profiles:    active: DEV
+    

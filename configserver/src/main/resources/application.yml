@@ -1,0 +1,18 @@
+#===================================
+#   SERVER CONFIG
+#===================================
+server:
+  port: 8888
+
+spring:
+  application:
+    name: CONFIG-SERVER
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: <GIT-URL>
+          search-paths: '{profile}'
+          username: ${GIT_USER_NAME}
+          password: ${GIT_PASSWORD}
